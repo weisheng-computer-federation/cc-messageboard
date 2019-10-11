@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>机房留言板</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/index.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div id="title" class="_1st">
+        <h1>机房留言板</h1>
+        <h2>fuck it tencent qq</h2>
+        <h2><a href="https://github.com/BeautyYuYanli/CC-messageboard">(view on github)</a></h2>
+    </div>
+    <div id="posts" class="_1st">
+        <div id="new_post" class="post_entry">
+            <textarea id="post_input_user" placeholder="标题" wrap="soft" maxlength="40"></textarea>
+            <div class="divider"></div>
+            <textarea id="post_input_content" placeholder="留言内容"></textarea>
+            <div class="button" onclick="send_post()">发送</div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div id="chats" class="_1st">
+        <h2>版聊区</h2>
+        <div id="new_chat" class="chat_entry">
+            <textarea id="chat_input_user" placeholder="发送人" wrap="soft" maxlength="40"></textarea>
+            <div class="divider"></div>
+            <textarea id="chat_input_content" placeholder="输入内容" onkeyup="keypress(event)"></textarea>
+            <div onclick="send_chat()" class="button">发送</div>
+        </div>
+        <div class="divider"></div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
