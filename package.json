@@ -1,0 +1,25 @@
+{
+  "name": "cc-messageboard",
+  "version": "1.0.0",
+  "description": "messageboard for computer classrooms: fuck it tencent qq(机房留言板: 去他妈的腾讯qq)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeautyYuYanli/CC-messageboard.git"
+  },
+  "author": "beautyyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BeautyYuYanli/CC-messageboard/issues"
+  },
+  "homepage": "https://github.com/BeautyYuYanli/CC-messageboard#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "minimist": "^1.2.0",
+    "node-notifier": "^6.0.0",
+    "socket.io": "^2.3.0"
+  }
+}
